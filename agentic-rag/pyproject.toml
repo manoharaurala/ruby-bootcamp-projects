@@ -1,0 +1,22 @@
+[project]
+name = "agentic-rag"
+version = "0.1.0"
+description = "Agentic RAG with CrewAI, PDF retrieval, and web search"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "crewai[tools,chromadb]>=1.15,<2",
+    "sentence-transformers>=3",
+    "tavily-python>=0.7",
+    "python-dotenv>=1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agentic_rag"]
+
+[tool.uv]
+package = true
