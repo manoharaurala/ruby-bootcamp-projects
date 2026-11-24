@@ -1,0 +1,9 @@
+openai
+openai-agents
+google-genai
+yfinance
+financetoolkit
+chromadb
+llama-index
+transformers
+torch
